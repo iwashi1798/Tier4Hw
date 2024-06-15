@@ -43,7 +43,7 @@ class SamplePageSearch(unittest.TestCase):
         self.button.click()
 
         stayin_loginpage=self.driver.find_element(By.ID, "loginform")
-        assert stayin_loginpage.is_displayed(),"Login successful page not found"
+        assert stayin_loginpage.is_displayed(),"Login failed page not found"
 
     def test_search_successed(self):
         """商品検索機能が正しく動作するかテストします。"""
