@@ -23,10 +23,8 @@ class SamplePageSearch(unittest.TestCase):
 
     # Testcase 1: can be login with right pw    
     def test_login_successful(self):
-        self.driver.find_element(By.NAME, "loginmail").clear
         self.driver.find_element(By.NAME, "loginmail").send_keys("yingpei.liu81@gmail.com")
         #pw input
-        self.driver.find_element(By.NAME, "loginpass").clear()
         self.driver.find_element(By.NAME, "loginpass").send_keys("Admin1234")
         
         self.button=self.driver.find_element(By.NAME, "member_login")
@@ -37,10 +35,8 @@ class SamplePageSearch(unittest.TestCase):
 
     # Testcase 2: cannot be login with wrong pw    
     def test_login_failed(self):
-        self.driver.find_element(By.NAME, "loginmail").clear()
         self.driver.find_element(By.NAME, "loginmail").send_keys("yingpei.liu81@gmail.com")
         #pw input
-        self.driver.find_element(By.NAME, "loginpass").clear()
         self.driver.find_element(By.NAME, "loginpass").send_keys("Admin1233")
         
         self.button=self.driver.find_element(By.NAME, "member_login")
