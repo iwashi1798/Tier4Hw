@@ -38,10 +38,10 @@ class SamplePageSearch(unittest.TestCase):
         self.button.click()
 
         #total price and quantity are correct
-        expect_number="¥4,800"
-        actual_number=self.driver.find_element(By.XPATH,"/html/body/div[2]/main/article/form/div[1]/table/tfoot/tr/th[5]").text
-            #print(actual_number)
-        assert actual_number==expect_number,"Expectednumber'{expect_number}',but got'{actual_number}'"
+        expect_price="¥4,800"
+        actual_price=self.driver.find_element(By.XPATH,"/html/body/div[2]/main/article/form/div[1]/table/tfoot/tr/th[5]").text
+            #print(actual_price)
+        assert actual_price==expect_price,"Expectedprice'{expect_price}',but got'{actual_price}'"
         #show correct quantity on cart icon
         expect_quantity = "3"
         actual_quantity=self.driver.find_element(By.XPATH,"/html/body/header/div/div[4]/div[2]/a/span").text
@@ -73,10 +73,10 @@ class SamplePageSearch(unittest.TestCase):
         self.button.click()
 
         #total price and quantity are correct
-        expect_number="¥6,400"
-        actual_number=self.driver.find_element(By.XPATH,"/html/body/div[2]/main/article/form/div[1]/table/tfoot/tr/th[5]").text
-            #print(actual_number)
-        assert actual_number==expect_number,"Expectednumber'{expect_number}',but got'{actual_number}'"
+        expect_price="¥6,400"
+        actual_price=self.driver.find_element(By.XPATH,"/html/body/div[2]/main/article/form/div[1]/table/tfoot/tr/th[5]").text
+            #print(actual_price)
+        assert actual_price==expect_price,"Expectedprice'{expect_price}',but got'{actual_price}'"
         #show correct quantity on cart icon
         expect_quantity = "4"
         actual_quantity=self.driver.find_element(By.XPATH,"/html/body/header/div/div[4]/div[2]/a/span").text
@@ -104,10 +104,10 @@ class SamplePageSearch(unittest.TestCase):
         self.button.click()
 
         #total price and quantity are correct
-        expect_number="¥1,600"
-        actual_number=self.driver.find_element(By.XPATH,"/html/body/div[2]/main/article/form/div[1]/table/tfoot/tr/th[5]").text
-            #print(actual_number)
-        assert actual_number==expect_number,"Expectednumber'{expect_number}',but got'{actual_number}'"
+        expect_price="¥1,600"
+        actual_price=self.driver.find_element(By.XPATH,"/html/body/div[2]/main/article/form/div[1]/table/tfoot/tr/th[5]").text
+            #print(actual_price)
+        assert actual_price==expect_price,"Expectedprice'{expect_price}',but got'{actual_pricef}'"
         #show correct quantity on cart icon
         expect_quantity = "1"
         actual_quantity=self.driver.find_element(By.XPATH,"/html/body/header/div/div[4]/div[2]/a/span").text
