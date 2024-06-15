@@ -13,7 +13,7 @@ Expect: show login page
 Testcase 2: Login with wrong account/pw  
 Expect: stay in same page  
     Data:  
-      - Account: yingpei.liu81@gmail.com
+      - Account: yingpei.liu81@gmail.com  
       - PW: Admin1234
 
 <TeaTest2.py> -> for shopping cart  
