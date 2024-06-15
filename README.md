@@ -24,5 +24,5 @@ Expect: Price==4800 and quantity==3
 Testcase 2: add 2 Abag and 1 Bbag to cart, and then change Abag from 2 to 3, and show correct price and quantity on the page  
 Expect: Price==6400 and quantity==4  
 
-Testcase3: Delete 2 Abag from cart, and show correct price and quantity on the page  
+Testcase3:  add 2 Abag and 1 Bbag to cart and than delete 2 Abag from cart, and show correct price and quantity on the page  
 Expect: Price==1600 and quantity==1  
