@@ -17,6 +17,7 @@ Expect: stay in same page
       - PW: Admin1234
 
 <TeaTest2.py> -> for shopping cart  
+
 Testcase 1: add 2 Abag and 1 Bbag to cart and show correct price and quantity on the page  
 Expect: Price==4800 and quantity==3  
 
