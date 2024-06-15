@@ -2,7 +2,7 @@
 # Test for 台湾茶藝館 https://kogetsu-an.shop/
 
 
-<TeaTest1.py> -> for login  
+<TeaTest_Login.py> -> for login  
 
 Testcase 1: Login with correct account/pw
 Expect: show login page    
@@ -16,7 +16,7 @@ Expect: stay in same page
       - Account: yingpei.liu81@gmail.com  
       - PW: Admin1233
 
-<TeaTest2.py> -> for shopping cart  
+<TeaTest_Cart.py> -> for shopping cart  
 
 Testcase 1: add 2 Abag and 1 Bbag to cart and show correct price and quantity on the page  
 Expect: Price==4800 and quantity==3  
