@@ -116,7 +116,7 @@ class SamplePageSearch(unittest.TestCase):
         
 
     # テスト後の後処理
-    def tearDown(self):
+    def teatDown(self):
         """テスト後の後処理を行います。"""
         # 10秒待機する
         time.sleep(2)

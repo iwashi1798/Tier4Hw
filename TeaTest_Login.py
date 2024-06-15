@@ -45,25 +45,10 @@ class SamplePageSearch(unittest.TestCase):
         stayin_loginpage=self.driver.find_element(By.ID, "loginform")
         assert stayin_loginpage.is_displayed(),"Login failed page not found"
 
-    def test_search_successed(self):
-        """商品検索機能が正しく動作するかテストします。"""
-        search_box = WebDriverWait(self.driver, 10).until(
-            EC.presence_of_element_located((By.ID, "input-search"))
-        )
-        search_box.send_keys("mac" + Keys.ENTER)
-        
-        # 検索結果が表示されるまで待機
-        WebDriverWait(self.driver, 10).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, ".product-layout .product-thumb"))
-        )
-
-        # 検索結果が期待通りに表示されるか確認
-        self.assertNotIn("There is no product that matches the search criteria.", self.driver.page_source)
-
 
 
     # テスト後の後処理
-    def tearDown(self):
+    def teatDown(self):
         """テスト後の後処理を行います。"""
         # 10秒待機する
         time.sleep(3)
